@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.ManHinhDangNhap">
+    <ImageView
+        android:src="@drawable/vsmart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+    <LinearLayout
+        android:background="#FBFAF7"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <TextView
+            android:textColor="#757777"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English - China - Thêm..."
+            android:textSize="18sp"
+            android:layout_gravity="center"></TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:background="@drawable/bodet_listview"
+                android:id="@+id/edtTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nhập tài khoản"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+                android:background="@drawable/bodet_listview"
+                android:id="@+id/edtMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Nhập mật khẩu"
+                android:password="true"
+                android:textSize="20sp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxLuuTaiKhoan"></CheckBox>
+            <TextView
+                android:textColor="#050505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu tài khoản"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:background="@drawable/custom_select_button"
+            android:text="Đăng nhập"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textColor="#0A2EF4"
+            android:layout_gravity="center"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOẶC"
+            android:layout_marginTop="30dp"
+            android:textSize="13sp"
+            android:textColor="#0A2EF4"
+            android:layout_gravity="center"></TextView>
+        <Button
+            android:id="@+id/buttonTaoTaiKhoanMoi"
+            android:background="@drawable/custom_select_button"
+            android:text="Tạo tài khoản mới"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lê Văn Hiếu - D13CNPM2"
+            android:textSize="15sp"
+            android:textColor="#ff00"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"></TextView>
+    </LinearLayout>
+</LinearLayout>

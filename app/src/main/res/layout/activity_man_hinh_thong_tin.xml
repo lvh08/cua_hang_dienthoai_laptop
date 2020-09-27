@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Thông tin"
+        app:titleTextColor="#0B0B0B"
+        android:background="#46B9ED"
+        android:id="@+id/toolBarThongTin"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bgthongtin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#131313"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Thông tin về cửa hàng"
+            android:gravity="center"
+            android:layout_margin="10dp"></TextView>
+        <LinearLayout
+            android:background="@drawable/bodet_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:drawableLeft="@drawable/address"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:text="Địa chỉ: tổ 2, Trung Phường, Minh Châu, Diễn Châu, Nghệ An"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/bodet_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".screen.ManHinhThongTin" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

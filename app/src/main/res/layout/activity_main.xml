@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawableLayoutMhc">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Trang chủ"
+                android:background="#46B9ED"
+                android:id="@+id/toolBarMhc"></androidx.appcompat.widget.Toolbar>
+
+<!--            <ViewFlipper-->
+<!--                android:id="@+id/viewFlipperMhc"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="212dp"></ViewFlipper>-->
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragmentQuangCao"
+                android:name="com.example.lvhstore.fragment.Fragment_Quang_Cao"></fragment>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#ED4B4B"
+                    android:id="@+id/sanphammoinhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Sản phẩm mới nhất"
+                    android:textStyle="italic"
+                    android:textSize="22sp"></TextView>
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="2"
+                    android:id="@+id/gridViewSanPhamMoiNhatMhc"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/bodet_listview"
+            android:id="@+id/navigationViewMhc">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/shop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"></ImageView>
+                <TextView
+                    android:textColor="#ff00"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LVH Store"
+                    android:textSize="35dp"></TextView>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#03DAC5"></View>
+            <ListView
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewMenuMhc"></ListView>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

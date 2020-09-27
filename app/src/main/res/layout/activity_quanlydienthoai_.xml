@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.Quanlydienthoai_Activity">
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_weight="8"
+            app:title="Quản lý điện thoại"
+            android:id="@+id/toolBarManHinhQuanLyDienThoai"
+            app:titleTextColor="#0B0B0B"
+            android:background="#46B9ED"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:layout_weight="2"
+            android:background="#46B9ED"
+            android:id="@+id/imageViewThemThongTinDienThoai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/add"></ImageView>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewManHinhQuanLyDienThoai"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"></ListView>
+</LinearLayout>
